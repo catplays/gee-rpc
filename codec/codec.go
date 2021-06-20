@@ -10,7 +10,7 @@ rpc 通信过程中请求和响应都需要用的
  */
 type  Header struct {
 	ServiceMethod string 	// 请求服务和方法，如service.method
-	Seq int64 				// 一次rpc请求的序列号
+	Seq uint64 				// 一次rpc请求的序列号
 	Error string			// 异常信息
 }
 
